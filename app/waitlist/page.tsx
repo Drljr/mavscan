@@ -88,22 +88,18 @@ export default function WaitlistPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#0f172b] text-white">
-      {/* Background layers */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#0f172b] via-[#11253f] to-[#0f172b]" />
-      <div className="absolute inset-x-0 top-0 -z-10 h-64 bg-[radial-gradient(circle_at_50%_-20%,rgba(163,255,0,0.12),transparent_50%)]" />
-
+    <div className="min-h-screen bg-white text-gray-900">
       <div className="mx-auto flex max-w-3xl flex-col gap-8 px-4 pb-16 pt-10 md:px-8">
         <WaitlistHeader step={step} totalSteps={totalSteps} />
 
         <header className="space-y-3 text-center">
-          <p className="text-sm uppercase tracking-[0.25em] text-lime-300">
+          <p className="text-sm uppercase tracking-[0.25em] text-[#008AFF]">
             MAVSCAN Waitlist
           </p>
-          <h1 className="text-3xl font-semibold md:text-4xl">
+          <h1 className="text-3xl font-semibold md:text-4xl text-gray-900">
             Get ready to scan smarter.
           </h1>
-          <p className="text-white/70">
+          <p className="text-gray-600">
             Answer a few quick questions so we can tailor MAVSCAN to your needs.
           </p>
         </header>
@@ -112,7 +108,7 @@ export default function WaitlistPage() {
 
         <form
           onSubmit={onSubmit}
-          className="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-[0_20px_80px_rgba(0,0,0,0.35)] backdrop-blur"
+          className="rounded-3xl border border-gray-200 bg-gray-50/80 p-6 shadow-lg"
         >
           <FormStepPills
             currentStep={step}
@@ -178,7 +174,7 @@ export default function WaitlistPage() {
               )}
 
               {submitError && (
-                <div className="mt-4 rounded-lg border border-red-400/30 bg-red-400/10 p-3 text-center text-sm text-red-300">
+                <div className="mt-4 rounded-lg border border-red-300 bg-red-50 p-3 text-center text-sm text-red-700">
                   {submitError}
                 </div>
               )}

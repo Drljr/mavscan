@@ -21,7 +21,7 @@ export default function FormNavigation({
         type="button"
         onClick={onBack}
         disabled={step === 1 || isSubmitting}
-        className="inline-flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-5 py-3 font-semibold text-white/80 backdrop-blur transition enabled:hover:border-lime-300/40 enabled:hover:text-lime-200 disabled:cursor-not-allowed disabled:opacity-40"
+        className="inline-flex items-center justify-center rounded-2xl border border-gray-300 bg-white px-5 py-3 font-semibold text-gray-700 transition enabled:hover:border-[#008AFF] enabled:hover:text-[#008AFF] disabled:cursor-not-allowed disabled:opacity-40"
       >
         Back
       </button>
@@ -31,7 +31,7 @@ export default function FormNavigation({
           type="button"
           onClick={onContinue}
           disabled={nextDisabled}
-          className="inline-flex items-center justify-center rounded-2xl bg-gradient-to-r from-lime-400 via-emerald-400 to-cyan-300 px-6 py-3 font-semibold text-[#0f172b] shadow-[0_15px_60px_rgba(163,255,0,0.25)] transition enabled:hover:scale-[1.01] disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:scale-100"
+          className="inline-flex items-center justify-center rounded-2xl bg-[#008AFF] px-6 py-3 font-semibold text-white shadow-lg transition enabled:hover:bg-[#0077e6] enabled:hover:scale-[1.01] disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:scale-100"
         >
           Continue
         </button>
@@ -40,7 +40,7 @@ export default function FormNavigation({
           type="submit"
           onClick={onSubmit}
           disabled={nextDisabled || isSubmitting}
-          className="inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-lime-400 via-emerald-400 to-cyan-300 px-6 py-3 font-semibold text-[#0f172b] shadow-[0_15px_60px_rgba(163,255,0,0.25)] transition enabled:hover:scale-[1.01] disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:scale-100"
+          className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#008AFF] px-6 py-3 font-semibold text-white shadow-lg transition enabled:hover:bg-[#0077e6] enabled:hover:scale-[1.01] disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:scale-100"
         >
           {isSubmitting ? (
             <>

@@ -19,10 +19,10 @@ export default function FormStepPills({
             type="button"
             onClick={() => onStepClick(step)}
             className={[
-              "h-7 w-7 rounded-full border text-xs font-semibold transition",
+              "h-7 w-7 rounded-full border text-xs font-semibold transition text-gray-700",
               n === currentStep
-                ? "border-lime-300/60 bg-lime-400/20 text-lime-200"
-                : "border-white/10 bg-white/5 text-white/70 hover:border-lime-300/30",
+                ? "border-[#008AFF] bg-[#008AFF]/10 text-[#008AFF]"
+                : "border-gray-200 bg-gray-50 hover:border-[#008AFF]/50",
             ].join(" ")}
             aria-current={n === currentStep ? "step" : undefined}
           >

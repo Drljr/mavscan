@@ -38,15 +38,15 @@ export default function FeaturesSection() {
     <section className="space-y-6">
       <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <p className="text-sm uppercase tracking-[0.2em] text-lime-300">
+          <p className="text-sm uppercase tracking-[0.2em] text-[#008AFF]">
             Feature preview
           </p>
-          <h2 className="text-3xl font-semibold">Powerful Features</h2>
-          <p className="text-white/70">
+          <h2 className="text-3xl font-semibold text-gray-900">Powerful Features</h2>
+          <p className="text-gray-600">
             Adapted from your feature image with vibrant cards.
           </p>
         </div>
-        <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/70">
+        <div className="rounded-full border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-gray-600">
           Inspired by your provided feature grid visual
         </div>
       </div>

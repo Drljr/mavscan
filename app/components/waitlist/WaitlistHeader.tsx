@@ -11,13 +11,13 @@ export default function WaitlistHeader({
     <div className="flex items-center justify-between">
       <Link
         href="/"
-        className="inline-flex items-center gap-2 text-sm text-white/70 hover:text-lime-200"
+        className="inline-flex items-center gap-2 text-sm text-gray-600 hover:text-[#008AFF]"
       >
         <span aria-hidden>‹</span>
         Back
       </Link>
-      <div className="text-xs text-white/60">
-        Step <span className="text-white">{step}</span> of {totalSteps}
+      <div className="text-xs text-gray-500">
+        Step <span className="font-semibold text-gray-900">{step}</span> of {totalSteps}
       </div>
     </div>
   );

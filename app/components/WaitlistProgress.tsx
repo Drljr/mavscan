@@ -48,14 +48,14 @@ export default function WaitlistProgress() {
   };
 
   return (
-    <div className="rounded-2xl border border-white/5 bg-white/5 p-4 backdrop-blur">
-      <div className="flex items-center justify-between text-sm text-white/70">
+    <div className="rounded-2xl border border-gray-200 bg-gray-50 p-4">
+      <div className="flex items-center justify-between text-sm text-gray-600">
         <span>Waitlist progress</span>
-        <span className="text-lime-300">{getStatusText()}</span>
+        <span className="font-medium text-[#008AFF]">{getStatusText()}</span>
       </div>
-      <div className="mt-3 h-2 rounded-full bg-white/10">
+      <div className="mt-3 h-2 rounded-full bg-gray-200">
         <div
-          className="h-2 rounded-full bg-gradient-to-r from-lime-400 via-emerald-400 to-cyan-300 shadow-[0_0_20px_rgba(163,255,0,0.5)] transition-all duration-1000 ease-out"
+          className="h-2 rounded-full bg-[#008AFF] transition-all duration-1000 ease-out"
           style={{ width: loading ? "0%" : `${stats.progress}%` }}
         />
       </div>
