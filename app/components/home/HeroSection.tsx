@@ -15,7 +15,7 @@ export default function HeroSection() {
             Counterfeit-proof shopping
           </p>
           <h1 className="text-4xl font-semibold leading-tight text-gray-900 md:text-5xl">
-            Verify every product with confidence.
+            Make informed choices one scan at a time.
           </h1>
           <p className="text-lg text-gray-600">
             Tell us about your needs and get notified when we launch. Help shape

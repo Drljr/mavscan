@@ -17,11 +17,6 @@ const features = [
     icon: "🛡️",
   },
   {
-    title: "Product History",
-    copy: "View supply chain details for any product in seconds.",
-    icon: "💾",
-  },
-  {
     title: "Global Database",
     copy: "Comprehensive verified products database worldwide.",
     icon: "🌍",
@@ -42,12 +37,6 @@ export default function FeaturesSection() {
             Feature preview
           </p>
           <h2 className="text-3xl font-semibold text-gray-900">Powerful Features</h2>
-          <p className="text-gray-600">
-            Adapted from your feature image with vibrant cards.
-          </p>
-        </div>
-        <div className="rounded-full border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-gray-600">
-          Inspired by your provided feature grid visual
         </div>
       </div>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
