@@ -13,6 +13,10 @@ export const metadata: Metadata = {
   description:
     "Join the waitlist for Mavscan. Scan barcodes and verify authentic cosmetics, health products, and beverages with 99.9% accuracy.",
   generator: "v0.app",
+  icons: {
+    icon: "/mavscan logo.jpg",
+    apple: "/mavscan logo.jpg",
+  },
 }
 
 export default function RootLayout({
