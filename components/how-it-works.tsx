@@ -37,12 +37,14 @@ export default function HowItWorks() {
 
         <div className="grid gap-6 md:grid-cols-4">
           {steps.map((step, i) => (
-            <div key={i} className="text-left">
-              <div className="mb-4 inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#007FCF]/10 text-xs font-semibold text-[#007FCF]">
-                {step.number}
+            <div key={i} className="text-center md:text-left">
+              <div className="mb-4 flex justify-center md:justify-start">
+                <div className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#007FCF]/10 text-xs font-semibold text-[#007FCF]">
+                  {step.number}
+                </div>
               </div>
               <h3 className="mb-2 text-base font-semibold text-slate-900">{step.title}</h3>
-              <p className="text-sm text-slate-600">{step.description}</p>
+              <p className="mx-auto max-w-sm text-sm text-slate-600 md:mx-0 md:max-w-none">{step.description}</p>
             </div>
           ))}
         </div>

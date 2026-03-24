@@ -6,11 +6,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0)
 
   const faqs = [
-    {
-      question: "Is my data safe with Mavscan?",
-      answer:
-        "Yes, we use bank-level encryption and never share your personal data. All scans are processed securely, and we comply with international data protection regulations.",
-    },
+
     {
       question: "Does it work offline?",
       answer:

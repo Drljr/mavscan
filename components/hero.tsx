@@ -3,16 +3,20 @@ import Link from "next/link"
 
 export default function Hero() {
   return (
-    <section className="flex min-h-[80vh] items-center px-6 py-16">
-      <div className="mx-auto grid w-full max-w-6xl items-center gap-12 md:grid-cols-[1.4fr_minmax(0,1fr)]">
-        <div>
+    <section className="flex px-6 py-16 md:min-h-[80vh] md:items-center">
+      <div className="mx-auto grid w-full max-w-6xl items-center gap-16 md:grid-cols-[1.4fr_minmax(0,1fr)]">
+        <div className="space-y-4 lg:max-w-2xl">
+          <div className="inline-flex items-center gap-2.5 rounded-full border border-gray-200 bg-gray-50 px-4 py-2 text-base text-gray-700">
+            <span className="inline-block h-3 w-3 shrink-0 rounded-full bg-[#007FCF]" />
+            Join the MAVSCAN early access waitlist
+          </div>
           <h1 className="mb-4 text-4xl font-semibold leading-tight tracking-tight text-slate-900 md:text-5xl lg:text-6xl">
-            Verify every product
-            <span className="block text-[#007FCF]">before it reaches you.</span>
+            Make informed choices one scan at a time.
+            {/* <span className="block text-[#007FCF]">before it reaches you.</span> */}
           </h1>
 
           <p className="mb-8 text-lg leading-relaxed text-slate-600 md:text-xl">
-            Mavscan is the ultimate app to authenticate cosmetics, health products, and beverages. Scan barcodes, verify serial numbers, and ensure product safety.
+            Mavscan is the app that authenticates cosmetics, health products, and beverages. Scan barcodes, verify serial numbers, and ensure product safety.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 text-sm text-slate-500">
@@ -33,7 +37,7 @@ export default function Hero() {
           </Link>
         </div>
 
-        <div className="flex flex-col items-center gap-8 md:items-baseline">
+        <div className="hidden flex-col items-center gap-8 md:flex md:items-baseline">
           <Image
             src="/mavscan logo.jpg"
             alt="Mavscan"
