@@ -20,11 +20,6 @@ export default function Features() {
       title: "Global Database",
       description: "Access our comprehensive database of verified products worldwide",
     },
-    {
-      icon: "⚙️",
-      title: "Smart Integration",
-      description: "Seamlessly integrates with your favorite shopping apps",
-    },
   ]
 
   return (
@@ -42,7 +37,7 @@ export default function Features() {
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2">
           {features.map((feature, i) => (
             <div
               key={i}
